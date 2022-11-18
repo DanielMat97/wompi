@@ -6,6 +6,7 @@ module.exports = {
     config_server: {
         port: process.env.PORT || 8080,
         version: process.env.API_VERSION,
-        name: process.env.API_NAME
+        name: process.env.API_NAME,
+        timeout: process.env.TIMEOUT
     }
 }
