@@ -1,8 +1,10 @@
 const express = require('express');
 const routes = express();
 
-const healthController = require('./health.route');
+const healthRoutes = require('./health.route');
+const ridesRoutes = require('./rides.route');
 
-routes.use(healthController);
+routes.use(healthRoutes);
+routes.use('/ride', ridesRoutes);
 
 module.exports = routes;
