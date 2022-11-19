@@ -8,5 +8,8 @@ module.exports = {
         version: process.env.API_VERSION,
         name: process.env.API_NAME,
         timeout: process.env.TIMEOUT
+    },
+    config_database: {
+        url: process.env.DB_URL
     }
 }
